@@ -1,0 +1,29 @@
+# Entorno
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+
+# Datos confidenciales
+data/raw/
+data/interim/
+data/processed/
+*.csv
+*.xlsx
+*.txt
+
+# Archivos temporales y binarios
+*.pkl
+*.h5
+*.db
+*.zip
+*.log
+
+# MLflow & DVC cache
+mlruns/
+.dvc/
+.cache/
+
+# Ignorar configuración VS Code, excepto settings.json
+.vscode/*
+!.vscode/settings.json
