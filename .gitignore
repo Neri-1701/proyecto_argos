@@ -11,6 +11,10 @@ data/processed/
 *.csv
 *.xlsx
 *.txt
+data/external/*
+*.parquet
+.env
+
 
 # Archivos temporales y binarios
 *.pkl
