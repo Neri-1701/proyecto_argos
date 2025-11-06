@@ -1,7 +1,6 @@
 stages:
-  prepare:
-    cmd: python src/data/prepare_data.py
-    deps:
-      - src/data/prepare_data.py
-    outs:
-      - data/processed/
+  prepare_data:
+    cmd: python -c "from data.load_secure_data import load_inventory; df = load_inventory(); print(df.shape)"
+    deps: []
+    outs: []
+

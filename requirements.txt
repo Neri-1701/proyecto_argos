@@ -1,11 +1,16 @@
 # ============================================
 # ARGOS - Sistema Inteligente de Clasificación y Localización de Materiales
+# Versión Alpha 0.1.0 (Hermes)
 # Entorno base reproducible (Python 3.12)
 # ============================================
 
 # --- Núcleo científico / análisis de datos ---
 pandas==2.2.3
 numpy==1.26.4
+scipy>=1.8.0
+scikit-learn>=1.7.2
+joblib>=1.2.0
+threadpoolctl>=3.1.0
 matplotlib==3.9.2
 seaborn==0.13.2
 pyarrow==17.0.0
@@ -25,9 +30,10 @@ ipykernel==6.29.5
 notebook==7.2.1
 
 # --- Desarrollo / entorno reproducible ---
-platformdirs<4,>=3.1.1
+platformdirs>=3.1.1,<4
 
-# --- Utilidades opcionales (logging, CLI, validación) ---
+# --- Utilidades (CLI, logging, YAML) ---
+typer==0.9.0
+click==8.1.3
 rich==13.9.2
-typer==0.12.3
 pyyaml==6.0.2
