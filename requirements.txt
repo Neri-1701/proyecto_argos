@@ -1,0 +1,33 @@
+# ============================================
+# ARGOS - Sistema Inteligente de Clasificación y Localización de Materiales
+# Entorno base reproducible (Python 3.12)
+# ============================================
+
+# --- Núcleo científico / análisis de datos ---
+pandas==2.2.3
+numpy==1.26.4
+matplotlib==3.9.2
+seaborn==0.13.2
+pyarrow==17.0.0
+
+# --- Integración con Google Drive / APIs ---
+pydrive2==1.21.3
+python-dotenv==1.0.1
+requests==2.32.3
+
+# --- Control de versiones de datos y experimentos ---
+dvc==3.51.0
+dvc-gdrive==3.0.1
+
+# --- Jupyter / notebooks / kernel ---
+jupyter==1.1.1
+ipykernel==6.29.5
+notebook==7.2.1
+
+# --- Desarrollo / entorno reproducible ---
+platformdirs<4,>=3.1.1
+
+# --- Utilidades opcionales (logging, CLI, validación) ---
+rich==13.9.2
+typer==0.12.3
+pyyaml==6.0.2
