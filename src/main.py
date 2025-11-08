@@ -1,13 +1,14 @@
-from src.pipeline.split_families import split_main
-from src.models.classify_family import predict_family
-from src.pipeline.predict_pipeline import predict_material
+# src/main.py
+
+from src.preprocess.normalize_types import generate_family_parquets
+
+def main():
+    # Definir la base a usar
+    database_path = "data/external/MaestroMiscelaneos.parquet"
+
+    # Ejecutar flujo de normalización y exportación
+    generate_family_parquets(file_path=database_path)
 
 if __name__ == "__main__":
-    # Paso 1: separación por familia (si aplica)
-    split_main()
+    main()
 
-    # Paso 2: predicción jerárquica (demo)
-    descripcion = "VALVULA GLOBO ACERO 2 PULG CLASE 600"
-    familia = predict_family(descripcion)
-    result = predict_material(descripcion, familia)
-    print(result)
