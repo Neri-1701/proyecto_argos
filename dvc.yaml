@@ -1,6 +1,13 @@
 stages:
   prepare_data:
-    cmd: python -c "from data.load_secure_data import load_inventory; df = load_inventory(); print(df.shape)"
+    cmd: python -c "from data.load_secure_data import load_inventory; df = 
+      load_inventory(); print(df.shape)"
     deps: []
     outs: []
+  split_families:
+    cmd: python src/pipeline/split_families.py
+    deps:
+    - src/pipeline/split_families.py
+    outs:
+    - data/interim/
 

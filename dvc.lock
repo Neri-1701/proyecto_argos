@@ -1,0 +1,5 @@
+schema: '2.0'
+stages:
+  prepare_data:
+    cmd: python -c "from data.load_secure_data import load_inventory; df = 
+      load_inventory(); print(df.shape)"

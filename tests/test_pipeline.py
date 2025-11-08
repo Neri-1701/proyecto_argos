@@ -27,6 +27,6 @@ def test_search_material_returns_best_match():
     text = "VALVULA GLOBO ACERO 2 PULG CLASE 600"
     code, desc, score = search_material(text)
     assert isinstance(code, str) and isinstance(desc, str) and isinstance(score, float)
-    assert code == "VAL-GLB-AC-2-CL600"
+    assert code == 3000001
     assert math.isfinite(score) and 0.0 <= score <= 1.0
     assert len(desc) > 0
