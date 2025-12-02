@@ -56,5 +56,7 @@ versión incluía en un solo archivo:
 
 ## Estado actual
 
--   `hermes_all_in_one/` contiene Hermes v0.1.x en su versión monolítica
+-   `hermes_all_in_one/` contiene Hermes v0.2.0 en su versión monolítica
     original.
+
+    Hermes v0.2.1 agrega un message box para que el usuario diga que busca en específico y este busque inteligentemente en inventario.
